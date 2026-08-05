@@ -1,38 +1,48 @@
 # dsa-scaler
 
-A structured walkthrough of Scaler's DSA curriculum — organized by module in
-teaching order. Each problem is documented with the approach and reasoning
-behind the solution, not just the code.
+A structured walkthrough of Scaler's DSA curriculum — organized by module and
+lecture in the order I'm working through it. Each lecture is documented with
+notes and the problems solved in that session.
 
 ## Structure
 
-Each module lives in its own numbered folder (`01-arrays`, `02-strings`, ...)
-so the repo mirrors the order the curriculum was taught in. Every module
-folder contains:
+```
+dsa-scaler/
+├── 01-intro-to-problem-solving-1/
+│   ├── L1-time-complexity/
+│   │   ├── lecture-notes.md
+│   │   └── problems/
+│   │       ├── count_factors.py
+│   │       └── sum_of_n_natural.py
+│   ├── L2-intro-to-arrays/
+│   │   ├── lecture-notes.md
+│   │   └── problems/
+│   └── ...
+├── 02-intro-to-problem-solving-2/
+│   └── ...
+└── 03-advanced-dsa-1/
+    └── ...
+```
 
-- `lecture-notes.md` — key concepts, patterns, and pitfalls for that module
-- One folder per problem, each with its own `README.md`
+Modules are numbered in the order I'm working through them (not Scaler's own
+module numbering, which is only used as a content reference). Each module
+folder contains lecture folders (`L1`, `L2`, ...), and each lecture folder
+has:
 
-## Problem README format
+- `lecture-notes.md` — concepts, formulas, and key points from that session
+- `problems/` — one Python file per problem solved in that lecture
 
-Every problem follows the same structure:
+## Problem file format
 
-1. **Problem Statement** — paraphrased in my own words, not copied verbatim
-2. **Hints** — the nudges I'd give myself before looking at the approach
-3. **Approach** — my thought process: what I tried, what didn't work, what
-   clicked
-4. **Solution** — the final code, with time and space complexity
+Each problem is a standalone `.py` file. The problem statement (paraphrased,
+not copied verbatim), hints, and approach live in a docstring at the top of
+the file, followed by the solution.
 
-## Module Index
-
-| # | Module | Status |
-|---|--------|--------|
-| 01 | _TBD_ | 🔲 Not started |
-
-_(This table will be filled in as modules are added.)_
+_(Exact docstring format still being finalized — will document here once
+locked in.)_
 
 ## Why this repo exists
 
 Built as part of a structured DSA practice routine while working through
 Scaler's curriculum — a record of problems solved and concepts learned,
-module by module.
+module by module, lecture by lecture.
